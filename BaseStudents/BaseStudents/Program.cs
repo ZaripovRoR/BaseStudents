@@ -1,0 +1,10 @@
+﻿using BaseStudents;
+var Vanya = new Student("Ivanov", "Ivan", "Ivanovich", 99, 5, 3.8);
+var Chel = new Student("Chelovek", "Chel", "Chelovekov", 999, 5, 4.2);
+var Arnold = new Student("Shvarcneger", "Arnold", "hz", 12, 5, 5.0);
+var Base = new Base();
+Base.Add(Vanya);
+Base.Add(Chel);
+Base.Add(Arnold);
+var NewArr=Base.Sort(Base.Students, 4.0);
+Base.Print(NewArr);
