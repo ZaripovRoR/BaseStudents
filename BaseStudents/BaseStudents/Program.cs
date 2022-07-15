@@ -7,4 +7,4 @@ Base.Add(Vanya);
 Base.Add(Chel);
 Base.Add(Arnold);
 var NewArr=Base.Sort(Base.Students, 4.0);
-Base.Print(NewArr);
+Console.WriteLine(Base.Print(NewArr)); 

@@ -24,10 +24,9 @@ namespace BaseStudents
             MiddleGrade = middleGrade;
 
         }
-        public void Print()
+        public string Print()
         {
-            Console.WriteLine($"{Surname} {Name} {Patronymic} {Age} {NumberClass} {MiddleGrade}");
-
+            return ($"{Surname} {Name} {Patronymic} {Age} {NumberClass} {MiddleGrade}");
         }
     }
 }
