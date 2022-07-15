@@ -24,9 +24,6 @@ namespace BaseStudents
             MiddleGrade = middleGrade;
 
         }
-        public string Print()
-        {
-            return ($"{Surname} {Name} {Patronymic} ");
-        }
+        
     }
 }

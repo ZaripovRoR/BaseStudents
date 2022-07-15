@@ -10,26 +10,29 @@ namespace BaseStudents
     {
         public int Number { get; set; }
         public List<Student> Students = new List<Student>();
-        
-        public List<Student> Sort(List<Student> students, double minball)
+        public List<string> SNPStudents = new List<string>();
+
+        public List<string> Sort(List<Student> students, double minball)
         {
             var sortList = from stud in students
                            where stud.MiddleGrade > minball
                            orderby stud.MiddleGrade
-                           select stud;
-            List<Student> SortList = sortList.ToList();
+                           select ($"{stud.Surname} {stud.Name} {stud.Patronymic} ");
+            
+            var SortList = sortList.ToList();
+            SNPStudents = SortList;
             return SortList;
         }
         public void Add(Student student)
         { 
             Students.Add(student);
         }
-        public string Print(List<Student> Students)
+        public string Print()
         {
             string Info="";
-            foreach (var student in Students)
+            foreach (var student in SNPStudents)
             {
-                Info=Info+student.Print()+"\n";
+                Info=Info+student+"\n";
             }
             return Info;
         }
