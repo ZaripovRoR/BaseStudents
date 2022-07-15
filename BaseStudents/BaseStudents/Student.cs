@@ -26,7 +26,7 @@ namespace BaseStudents
         }
         public string Print()
         {
-            return ($"{Surname} {Name} {Patronymic} {Age} {NumberClass} {MiddleGrade}");
+            return ($"{Surname} {Name} {Patronymic} ");
         }
     }
 }
